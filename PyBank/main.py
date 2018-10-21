@@ -16,7 +16,7 @@ with open(csvpath, newline='') as csvfile:
 
     # Read the header row first (skip this step if there is now header)
     csv_header = next(csvreader)
-    print(f"CSV Header: {csv_header}")
+    #print(f"CSV Header: {csv_header}")
 
     total = 0
     x = 0

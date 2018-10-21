@@ -18,7 +18,7 @@ with open(csvpath, newline='') as csvfile:
 
     # Read the header row first (skip this step if there is now header)
     csv_header = next(csvreader)
-    print(f"CSV Header: {csv_header}")
+    #print(f"CSV Header: {csv_header}")
 
     x=0
     total1 = 0
@@ -36,10 +36,10 @@ with open(csvpath, newline='') as csvfile:
         elif str(row[2]) == "O'Tooley":
            total4 = total4 + 1
        
-    t1 = round((total1/x)*100)
-    t2 = round((total2/x)*100)
-    t3 = round((total3/x)*100)
-    t4 = round((total4/x)*100)
+    t1 = round((total1/x)*100, 3)
+    t2 = round((total2/x)*100, 3)
+    t3 = round((total3/x)*100, 3)
+    t4 = round((total4/x)*100, 3)
 
     if t1 > t2:
         a = "Khan"
